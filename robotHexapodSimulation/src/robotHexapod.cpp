@@ -1,0 +1,45 @@
+#include "robotHexapod.hpp"
+
+RobotHexapod::RobotHexapod(
+            float widthBody,
+            float lenghtBody,
+            float heightBody,
+            float weightBody,
+            float xLeg1Leg3RelativeToBodyPosition,
+            float xLeg4Leg6RelativeToBodyPosition,
+            float xLeg2RelativeToBodyPosition,
+            float xLeg5RelativeToBodyPosition,
+            float yAllLegsRelativeToBodyPosition,
+            float zLeg1Leg6RelativeToBodyPosition,
+            float zLeg2Leg5RelativeToBodyPosition,
+            float zLe3Leg4RelativeToBodyPosition,
+            float lenghtCoxa,
+            float lenghtFemur,
+            float lenghtTibia,
+            float angleLeg1,
+            float angleLeg2,
+            float angleLeg3,
+            float angleLeg4,
+            float angleLeg5,
+            float angleLeg6) :
+            a_weightBody{weightBody}, 
+            a_widthBody{widthBody}, 
+            a_lenghtBody{lenghtBody}, 
+            a_heightBody{heightBody},
+            a_xLeg1Leg3RelativeToBodyPosition{xLeg1Leg3RelativeToBodyPosition},
+            a_xLeg4Leg6RelativeToBodyPosition{xLeg4Leg6RelativeToBodyPosition},
+            a_xLeg2RelativeToBodyPosition{xLeg2RelativeToBodyPosition},
+            a_xLeg5RelativeToBodyPosition{xLeg5RelativeToBodyPosition},
+            a_yAllLegsRelativeToBodyPosition{yAllLegsRelativeToBodyPosition},
+            a_zLeg1Leg6RelativeToBodyPosition{zLeg1Leg6RelativeToBodyPosition},
+            a_zLeg2Leg5RelativeToBodyPosition{zLeg2Leg5RelativeToBodyPosition},
+            a_zLeg3Leg4RelativeToBodyPosition{zLe3Leg4RelativeToBodyPosition},
+            a_angleLeg1{angleLeg1},
+            a_angleLeg2{angleLeg2},
+            a_angleLeg3{angleLeg3},
+            a_angleLeg4{angleLeg4},
+            a_angleLeg5{angleLeg5},
+            a_angleLeg6{angleLeg6}
+{
+    std::cout << "Robot init !" << std::endl; 
+}
